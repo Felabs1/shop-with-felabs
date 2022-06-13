@@ -1,3 +1,4 @@
+import { mobile } from "../responsive";
 import styled from "styled-components";
 const Container = styled.div`
 	flex: 1;
@@ -9,6 +10,7 @@ const Image = styled.img`
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	${mobile({height: "30vh"})}
 `;
 const Info = styled.div`
 	position: absolute;
